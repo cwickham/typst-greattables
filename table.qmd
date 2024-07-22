@@ -31,33 +31,32 @@ gt_tbl = ciep_gt_tbl \
                 decimals=0) \
     .data_color(
         columns=['CO2 Intensity'],
-        palette=[
-            "#00A600", "#E6E600", "#E8C32E", "#D69C4E", "#Dc863B", "sienna", "sienna4", "tomato4", "brown"],
+        palette=["#FFF700", "#FFD300", "#FFA700", "#FF7C00", "#FF5200", "#FF2900", "#FF0000", "#D60000", "#AD0000"],
         domain=[0, 900]
         ) \
     .data_color(
         columns=['Hydro', 'Nuclear', 'Wind', 'Solar','Geothermal'],
-        palette=["#00A600", "chartreuse3", "chartreuse4", "snow"][::-1],
+        palette=["#0077BE", "#4A98C9", "#94BAD4", "#E6F3FF"][::-1],
         domain=[0, 1]
         ) \
     .data_color(
         columns=['Hydro', 'Geothermal'],
-        palette=["#00A600", "chartreuse3", "chartreuse4", "snow"][::-1],
+        palette=["#0077BE", "#4A98C9", "#94BAD4", "#E6F3FF"][::-1],
         domain=[0, 1]
         ) \
     .data_color(
         columns=['Biomass'],
-        palette=["snow", "#EEC900", "#E8C32E", "#D69C4E"],
+        palette=["#E6F3FF", "#FFD300", "#FFA700", "#FF7C00"],
         domain=[0, 0.3]
         ) \
     .data_color(
         columns=['Gas', 'Coal', 'Oil'],
-        palette=["tomato4", "sienna4", "#D69C4E", "#Dc863B", "snow"][::-1],
+        palette=["#AD0000", "#D60000", "#FF5200", "#FF7C00", "#E6F3FF"][::-1],
         domain=[0, 1]
         ) \
     .data_color(
         columns=['Zone','Unknown', 'Hydro Discharge', 'Battery Discharge'],
-        palette=["snow", "snow", "snow", 'snow']
+        palette=["#E6F3FF", "#E6F3FF", "#E6F3FF", '#E6F3FF']
         ) \
     .cols_width(
         {'Zone': '106px', 'CO2 Intensity': '58px','Hydro': '58px', 'Nuclear': '58px', 'Wind': '58px', 'Solar': '58px',
@@ -84,10 +83,10 @@ gt_tbl = ciep_gt_tbl \
         source_notes_padding=3,
         table_font_names=system_fonts("humanist"),
         data_row_padding='1px',
-        heading_background_color='antiquewhite',
-        source_notes_background_color='antiquewhite',
-        column_labels_background_color='antiquewhite',
-        table_background_color='snow',
+        heading_background_color='#E6F3FF',
+        source_notes_background_color='#E6F3FF',
+        column_labels_background_color='#E6F3FF',
+        table_background_color='#FFFFFF',
         data_row_padding_horizontal=3,
         column_labels_padding_horizontal=58
         ) \
@@ -100,6 +99,4 @@ gt_tbl = ciep_gt_tbl \
         )
 
 gt_tbl
-
 ```
-
